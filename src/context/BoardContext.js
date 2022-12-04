@@ -11,9 +11,8 @@ export function BoardProvider(props)
 {
     const [ columns, setColumns ] = React.useState([]);
 
-    const addColumn = (column) => {
-        setColumns(oldArray => [...oldArray, column]);
-        console.log(columns);
+    const addColumn = (columns) => {
+        setColumns(columns);
     };
 
     return (

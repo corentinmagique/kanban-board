@@ -1,5 +1,6 @@
 {
     "welcome" : "Bienvenue !",
     "no_column" : "Ton tableau est vide ...",
-    "click_to_add" : "Cliques pour en ajouter un !"
+    "click_to_add" : "Cliques pour en ajouter un !",
+    "column_title" : "Sans Titre"
 }
