@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+import React from 'react'
+import Translate from './components/Translation/Translate';
+
+import { AppProvider } from './context/AppContext';
+
+const theme = extendTheme({
+  components: {
+
+  }
+});
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppProvider>
+      <ChakraProvider theme={theme}>
+        <h1><Translate>welcome</Translate></h1>
+      </ChakraProvider>
+    </AppProvider>
   );
-}
+  
+};
 
 export default App;
