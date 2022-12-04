@@ -1,4 +1,5 @@
 {
     "welcome" : "Welcome !",
-    "no_column" : "There is no elements in your board ..."
+    "no_column" : "There is no elements in your board ...",
+    "click_to_add" : "Click-me to add one !"
 }

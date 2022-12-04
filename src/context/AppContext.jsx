@@ -1,14 +1,15 @@
 import React from 'react';
 
 const AppContext = React.createContext({
-    language : 'english'
+    language : 'french',
+    changeLanguage: (language)=> {}
 });
 
 export default AppContext;
 
 export function AppProvider(props)
 {
-    const [language, setLanguage] = React.useState('english');
+    const [language, setLanguage] = React.useState('french');
 
     const changeLanguage = (language) => {
         setLanguage(language);
