@@ -1,25 +1,21 @@
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import React from 'react'
+import Board from './components/Board/Board';
 import Translate from './components/Translation/Translate';
 
 import { AppProvider } from './context/AppContext';
 
-const theme = extendTheme({
-  components: {
-
-  }
-});
+import theme from './themes';
 
 function App() {
-
   return (
     <AppProvider>
       <ChakraProvider theme={theme}>
-        <h1><Translate>welcome</Translate></h1>
+        <Board />
       </ChakraProvider>
     </AppProvider>
   );
-  
+
 };
 
 export default App;
